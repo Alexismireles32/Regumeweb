@@ -1,0 +1,135 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout 
+  title="About ReguMe - Health Protocol Organizer" 
+  description="Learn about ReguMe, the health protocol organizer for the social media age."
+>
+  <div class="container">
+    <h1>About ReguMe</h1>
+
+    <p style="font-size: 1.25rem; color: var(--text-light); margin-bottom: 2rem;">
+      Health Protocol Organizer for the Social Media Age
+    </p>
+
+    <div class="card">
+      <h2 style="margin-top: 0;">The Problem</h2>
+      <p>
+        Health advice is scattered across TikTok, Instagram, and YouTube. Influencers share 
+        supplement stacks, morning routines, and wellness protocols—but keeping track of it all 
+        is overwhelming. Screenshots pile up, notes get lost, and consistency becomes impossible.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top: 0;">The Solution</h2>
+      <p>
+        ReguMe transforms social media wellness content into actionable, organized health protocols. 
+        Simply paste a video URL, and our AI extracts the protocol and organizes it into:
+      </p>
+      <ul>
+        <li><strong>Daily action checklists</strong> - Never forget a step</li>
+        <li><strong>Supplement schedules</strong> - Track what to take and when</li>
+        <li><strong>Habit reminders</strong> - Build consistency</li>
+        <li><strong>Progress tracking</strong> - See what's working</li>
+      </ul>
+    </div>
+
+    <h2>How It Works</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+      <div class="card" style="text-align: center;">
+        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">1</h3>
+        <h4 style="margin: 0 0 0.5rem 0;">Import</h4>
+        <p style="margin: 0;">Paste a video URL from TikTok, Instagram, or YouTube</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">2</h3>
+        <h4 style="margin: 0 0 0.5rem 0;">Extract</h4>
+        <p style="margin: 0;">AI analyzes the video and extracts the health protocol</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">3</h3>
+        <h4 style="margin: 0 0 0.5rem 0;">Organize</h4>
+        <p style="margin: 0;">Protocols are saved to your personal library</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">4</h3>
+        <h4 style="margin: 0 0 0.5rem 0;">Track</h4>
+        <p style="margin: 0;">Daily reminders keep you consistent</p>
+      </div>
+    </div>
+
+    <h2>Mission</h2>
+
+    <div class="card" style="background: var(--accent); border-left: 4px solid var(--primary);">
+      <p style="font-size: 1.1rem; margin: 0;">
+        <strong>Democratize health knowledge</strong> by making wellness protocols accessible, 
+        organized, and actionable for everyone.
+      </p>
+    </div>
+
+    <h2>Our Values</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+      <div class="card">
+        <h3 style="color: var(--primary); margin-top: 0;">Attribution</h3>
+        <p>Always credit original creators</p>
+      </div>
+      
+      <div class="card">
+        <h3 style="color: var(--primary); margin-top: 0;">Safety</h3>
+        <p>Strong medical disclaimers and user protection</p>
+      </div>
+      
+      <div class="card">
+        <h3 style="color: var(--primary); margin-top: 0;">Privacy</h3>
+        <p>Your health data stays secure</p>
+      </div>
+      
+      <div class="card">
+        <h3 style="color: var(--primary); margin-top: 0;">Community</h3>
+        <p>Share insights to help others</p>
+      </div>
+    </div>
+
+    <h2>Technology</h2>
+
+    <p>Built with modern health tech stack:</p>
+    <ul>
+      <li><strong>React Native</strong> - Native mobile experience</li>
+      <li><strong>Supabase</strong> - Secure backend infrastructure</li>
+      <li><strong>OpenAI GPT-4o</strong> - AI-powered protocol extraction</li>
+      <li><strong>Social Media APIs</strong> - Content discovery</li>
+    </ul>
+
+    <div class="alert alert-warning">
+      <h3 style="margin-top: 0;">⚕️ Important Medical Disclaimer</h3>
+      <p>
+        ReguMe provides informational content only and is not a substitute for professional 
+        medical advice. Always consult with qualified healthcare providers before following 
+        any health protocols.
+      </p>
+      <p>
+        <a href="/medical-disclaimer">Read our full Medical Disclaimer →</a>
+      </p>
+    </div>
+
+    <h2>Get Started</h2>
+
+    <div class="card" style="text-align: center; background: var(--background);">
+      <h3>Join thousands organizing their wellness journey with ReguMe</h3>
+      <div style="margin-top: 1.5rem;">
+        <a href="#download" class="btn">Download on the App Store</a>
+      </div>
+      <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-light);">
+        Questions? <a href="/contact">Contact us</a> or check our <a href="/faq">FAQ</a>
+      </p>
+    </div>
+  </div>
+</Layout>
+

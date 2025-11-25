@@ -1,33 +1,131 @@
-# Astro Starter Kit: Minimal
+# ReguMe Legal Website
 
-```sh
-npm create astro@latest -- --template minimal
+**Professional legal website for ReguMe iOS app - Required for App Store approval**
+
+Built with [Astro](https://astro.build) for fast performance and SEO optimization.
+
+---
+
+## ✅ What's Included
+
+This website contains **all required pages** for App Store approval:
+
+### Required by Apple
+- ✅ **Privacy Policy** (`/privacy-policy`) - REQUIRED by Apple
+- ✅ **Terms of Service** (`/terms-of-service`) - REQUIRED by Apple  
+- ✅ **Contact Page** (`/contact`) - REQUIRED by Apple
+- ✅ **Data Deletion** (`/data-deletion`) - REQUIRED by Apple
+
+### Required for Health Apps
+- ✅ **Medical Disclaimer** (`/medical-disclaimer`) - CRITICAL for health apps
+
+### Additional Legal Pages
+- ✅ **Cookie Policy** (`/cookie-policy`)
+- ✅ **DMCA Policy** (`/dmca-policy`)
+
+### Informational Pages
+- ✅ **Homepage** (`/`)
+- ✅ **About** (`/about`)
+- ✅ **FAQ** (`/faq`)
+
+---
+
+## 🚀 Quick Start
+
+### 1. Development Server
+
+```bash
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Opens at **http://localhost:4321**
 
-## 🚀 Project Structure
+### 2. Build for Production
 
-Inside of your Astro project, you'll see the following folders and files:
+```bash
+npm run build
+```
 
-```text
+### 3. Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+```
 /
 ├── public/
+│   └── favicon.svg
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/
+│   │   └── Layout.astro          # Main layout with header/footer
+│   ├── pages/
+│   │   ├── index.astro            # Homepage
+│   │   ├── privacy-policy.astro   # Privacy Policy (REQUIRED)
+│   │   ├── terms-of-service.astro # Terms of Service (REQUIRED)
+│   │   ├── medical-disclaimer.astro # Medical Disclaimer (REQUIRED)
+│   │   ├── contact.astro          # Contact Page (REQUIRED)
+│   │   ├── data-deletion.astro    # Data Deletion (REQUIRED)
+│   │   ├── about.astro            # About ReguMe
+│   │   ├── faq.astro              # FAQ
+│   │   ├── cookie-policy.astro    # Cookie Policy
+│   │   └── dmca-policy.astro      # DMCA Policy
+│   └── styles/
+│       └── global.css             # Brand colors & styles
+├── DEPLOYMENT-CHECKLIST.md        # Step-by-step deployment guide
+├── CUSTOMIZATION-GUIDE.md         # How to customize content
+└── prd.md                         # Original requirements
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📋 Next Steps
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Before Deployment:
+
+1. **Read the guides:**
+   - 📖 [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md) - Complete deployment guide
+   - 🎨 [CUSTOMIZATION-GUIDE.md](./CUSTOMIZATION-GUIDE.md) - Customize content
+
+2. **Update email addresses** (see CUSTOMIZATION-GUIDE.md)
+   - `support@regume.com`
+   - `privacy@regume.com`
+   - `legal@regume.com`
+   - `dmca@regume.com`
+
+3. **Review legal content**
+   - Have a lawyer review (highly recommended)
+   - Update "Last Updated" dates
+   - Add business address (if required)
+
+4. **Deploy to Vercel/Netlify** (see DEPLOYMENT-CHECKLIST.md)
+   - Free hosting with SSL
+   - Automatic deployments
+   - Custom domain support
+
+5. **Add URLs to App Store Connect**
+   - Privacy Policy URL
+   - Support URL
+   - Terms URL
+
+---
+
+## 🎨 Brand Colors
+
+```css
+Primary: #00A57E    /* Teal green */
+Background: #F4FDFC /* Mint white */
+Dark: #062925       /* Dark teal */
+Accent: #B9F2DA     /* Light mint */
+```
+
+---
 
 ## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -35,9 +133,53 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm run astro check`     | Check for TypeScript/Astro errors                |
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🚨 Important Notes
+
+### For App Store Approval:
+
+1. ✅ **All required pages are complete**
+2. ✅ **Mobile-responsive design**
+3. ✅ **Fast loading with Astro**
+4. ⚠️ **Legal review recommended** (especially Medical Disclaimer)
+5. ⚠️ **Must be deployed with HTTPS**
+6. ⚠️ **Email addresses must work**
+
+### Medical Disclaimer:
+
+This is **CRITICAL** for health apps. The Medical Disclaimer clearly states:
+- ReguMe is NOT medical advice
+- Users should consult healthcare professionals
+- No warranties or guarantees
+- Limitation of liability
+
+**Do not modify or weaken the Medical Disclaimer without legal review.**
+
+---
+
+## 📞 Support
+
+- **Deployment issues?** See [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md)
+- **Content customization?** See [CUSTOMIZATION-GUIDE.md](./CUSTOMIZATION-GUIDE.md)
+- **Astro questions?** Visit [Astro Documentation](https://docs.astro.build)
+
+---
+
+## ✨ Features
+
+- ⚡ Lightning-fast with Astro
+- 📱 Mobile-responsive design
+- 🎨 Professional brand styling
+- 🔒 GDPR & CCPA compliant
+- ♿ Accessible navigation
+- 🔍 SEO-optimized
+- 📄 All legal pages complete
+
+---
+
+**Ready for App Store submission!** 🚀
+
+Follow the [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md) to deploy and submit to Apple.

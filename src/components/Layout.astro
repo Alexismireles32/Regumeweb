@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "ReguMe - Health Protocol Organizer" } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="/" class="logo">
+          <span>ReguMe</span>
+        </a>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/privacy-policy">Privacy</a>
+          <a href="/terms-of-service">Terms</a>
+          <a href="/medical-disclaimer">Medical Disclaimer</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/terms-of-service">Terms of Service</a></li>
+              <li><a href="/medical-disclaimer">Medical Disclaimer</a></li>
+              <li><a href="/cookie-policy">Cookie Policy</a></li>
+              <li><a href="/dmca-policy">DMCA Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/data-deletion">Delete My Data</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about">About ReguMe</a></li>
+              <li><a href="mailto:support@regume.com">support@regume.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © {new Date().getFullYear()} ReguMe. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
