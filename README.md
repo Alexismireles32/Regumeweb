@@ -183,3 +183,4 @@ This is **CRITICAL** for health apps. The Medical Disclaimer clearly states:
 **Ready for App Store submission!** 🚀
 
 Follow the [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md) to deploy and submit to Apple.
+
