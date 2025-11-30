@@ -9,12 +9,12 @@ import Layout from '../components/Layout.astro';
   <div class="container">
     <h1>About ReguMe</h1>
 
-    <p style="font-size: 1.25rem; color: var(--text-light); margin-bottom: 2rem;">
+    <p class="subtitle">
       Health Protocol Organizer for the Social Media Age
     </p>
 
     <div class="card">
-      <h2 style="margin-top: 0;">The Problem</h2>
+      <h2>The Problem</h2>
       <p>
         Health advice is scattered across TikTok, Instagram, and YouTube. Influencers share 
         supplement stacks, morning routines, and wellness protocols—but keeping track of it all 
@@ -23,7 +23,7 @@ import Layout from '../components/Layout.astro';
     </div>
 
     <div class="card">
-      <h2 style="margin-top: 0;">The Solution</h2>
+      <h2>The Solution</h2>
       <p>
         ReguMe transforms social media wellness content into actionable, organized health protocols. 
         Simply paste a video URL, and our AI extracts the protocol and organizes it into:
@@ -38,36 +38,36 @@ import Layout from '../components/Layout.astro';
 
     <h2>How It Works</h2>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-      <div class="card" style="text-align: center;">
-        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">1</h3>
-        <h4 style="margin: 0 0 0.5rem 0;">Import</h4>
-        <p style="margin: 0;">Paste a video URL from TikTok, Instagram, or YouTube</p>
+    <div class="step-grid">
+      <div class="card step-card">
+        <div class="step-number">1</div>
+        <h4>Import</h4>
+        <p>Paste a video URL from TikTok, Instagram, or YouTube</p>
       </div>
       
-      <div class="card" style="text-align: center;">
-        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">2</h3>
-        <h4 style="margin: 0 0 0.5rem 0;">Extract</h4>
-        <p style="margin: 0;">AI analyzes the video and extracts the health protocol</p>
+      <div class="card step-card">
+        <div class="step-number">2</div>
+        <h4>Extract</h4>
+        <p>AI analyzes the video and extracts the health protocol</p>
       </div>
       
-      <div class="card" style="text-align: center;">
-        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">3</h3>
-        <h4 style="margin: 0 0 0.5rem 0;">Organize</h4>
-        <p style="margin: 0;">Protocols are saved to your personal library</p>
+      <div class="card step-card">
+        <div class="step-number">3</div>
+        <h4>Organize</h4>
+        <p>Protocols are saved to your personal library</p>
       </div>
       
-      <div class="card" style="text-align: center;">
-        <h3 style="color: var(--primary); font-size: 2rem; margin: 0 0 0.5rem 0;">4</h3>
-        <h4 style="margin: 0 0 0.5rem 0;">Track</h4>
-        <p style="margin: 0;">Daily reminders keep you consistent</p>
+      <div class="card step-card">
+        <div class="step-number">4</div>
+        <h4>Track</h4>
+        <p>Daily reminders keep you consistent</p>
       </div>
     </div>
 
     <h2>Mission</h2>
 
-    <div class="card" style="background: var(--accent); border-left: 4px solid var(--primary);">
-      <p style="font-size: 1.1rem; margin: 0;">
+    <div class="card mission-card">
+      <p>
         <strong>Democratize health knowledge</strong> by making wellness protocols accessible, 
         organized, and actionable for everyone.
       </p>
@@ -75,24 +75,24 @@ import Layout from '../components/Layout.astro';
 
     <h2>Our Values</h2>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-      <div class="card">
-        <h3 style="color: var(--primary); margin-top: 0;">Attribution</h3>
+    <div class="values-grid">
+      <div class="card value-card">
+        <h3>Attribution</h3>
         <p>Always credit original creators</p>
       </div>
       
-      <div class="card">
-        <h3 style="color: var(--primary); margin-top: 0;">Safety</h3>
+      <div class="card value-card">
+        <h3>Safety</h3>
         <p>Strong medical disclaimers and user protection</p>
       </div>
       
-      <div class="card">
-        <h3 style="color: var(--primary); margin-top: 0;">Privacy</h3>
+      <div class="card value-card">
+        <h3>Privacy</h3>
         <p>Your health data stays secure</p>
       </div>
       
-      <div class="card">
-        <h3 style="color: var(--primary); margin-top: 0;">Community</h3>
+      <div class="card value-card">
+        <h3>Community</h3>
         <p>Share insights to help others</p>
       </div>
     </div>
@@ -108,7 +108,7 @@ import Layout from '../components/Layout.astro';
     </ul>
 
     <div class="alert alert-warning">
-      <h3 style="margin-top: 0;">⚕️ Important Medical Disclaimer</h3>
+      <h3>⚕️ Important Medical Disclaimer</h3>
       <p>
         ReguMe provides informational content only and is not a substitute for professional 
         medical advice. Always consult with qualified healthcare providers before following 
@@ -126,7 +126,7 @@ import Layout from '../components/Layout.astro';
       <div style="margin-top: 1.5rem;">
         <a href="#download" class="btn">Download on the App Store</a>
       </div>
-      <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-light);">
+      <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-light); font-size: clamp(0.875rem, 2.5vw, 0.9375rem);">
         Questions? <a href="/contact">Contact us</a> or check our <a href="/faq">FAQ</a>
       </p>
     </div>
