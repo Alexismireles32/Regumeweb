@@ -8,7 +8,7 @@ import Layout from '../components/Layout.astro';
 >
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: November 25, 2024</p>
+    <p class="last-updated">Last Updated: December 13, 2025</p>
 
     <p>
       ReguMe ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we collect, 
@@ -21,121 +21,323 @@ import Layout from '../components/Layout.astro';
 
     <h2>1. Information We Collect</h2>
 
-    <h3>Personal Information</h3>
+    <h3>Account Information</h3>
     <ul>
-      <li>Email address (for account creation)</li>
-      <li>Name (optional, for personalization)</li>
-      <li>Age range (optional, for anonymized health insights)</li>
-      <li>Gender (optional, for anonymized health insights)</li>
-      <li>Geographic region (optional, general location only)</li>
+      <li><strong>Email address</strong> (required for account creation and authentication)</li>
+      <li><strong>Name</strong> (optional, from social sign-in providers like Apple or Google)</li>
+      <li><strong>Password</strong> (hashed, never stored in plaintext)</li>
     </ul>
 
-    <h3>Health Information</h3>
+    <h3>Optional Demographics</h3>
+    <p>You may optionally provide:</p>
     <ul>
-      <li>Saved wellness protocols</li>
-      <li>Supplement/habit tracking data</li>
-      <li>Progress check-in responses</li>
-      <li>Daily action completion status</li>
-      <li>Outcome tracking data (anonymized and aggregated)</li>
+      <li><strong>Age range</strong> (e.g., 18-24, 25-34, etc.) - NOT your exact age or date of birth</li>
+      <li><strong>Gender</strong> (male, female, non-binary, prefer-not-to-say)</li>
+      <li><strong>Location region</strong> (general region only, NOT precise GPS location)</li>
     </ul>
+    <p>This information is used for anonymous outcome tracking and aggregate statistics only.</p>
 
     <h3>Usage Information</h3>
     <ul>
-      <li>Video URLs you import</li>
-      <li>Search queries in Discovery Engine</li>
-      <li>App usage analytics</li>
-      <li>Crash reports</li>
+      <li>Wellness protocols you save</li>
+      <li>Daily habits and supplements you track</li>
+      <li>Folders you create and organize</li>
+      <li>Video URLs you import from social media</li>
+      <li>Search queries in Discovery feature</li>
+      <li>Feature usage and interactions</li>
       <li>Device information (model, OS version)</li>
+      <li>App version and crash reports</li>
+    </ul>
+
+    <h3>Health & Wellness Data</h3>
+    <ul>
+      <li>Saved wellness protocols extracted from videos</li>
+      <li>Supplement and habit tracking data</li>
+      <li>Daily action completion status</li>
+      <li>Progress check-in responses (if you opt-in to outcome tracking)</li>
+      <li>Outcome tracking data (anonymized and aggregated, only if you opt-in)</li>
     </ul>
 
     <h3>Third-Party Data</h3>
     <ul>
-      <li>Social media video metadata (from TikTok, Instagram, YouTube)</li>
-      <li>Creator profile information (usernames, follower counts)</li>
+      <li>Social media video metadata (from TikTok, Instagram, YouTube, Facebook)</li>
+      <li>Creator profile information (usernames, follower counts, profile images)</li>
       <li>Product recommendations (from Amazon Product Advertising API)</li>
+    </ul>
+
+    <h3>What We DO NOT Collect</h3>
+    <ul class="xlist">
+      <li>Precise GPS location</li>
+      <li>Exact age or date of birth</li>
+      <li>Medical records or diagnoses</li>
+      <li>Health conditions (only general wellness categories)</li>
+      <li>Payment information (handled by Apple/Google)</li>
+      <li>Social media passwords</li>
+      <li>Device identifiers for cross-app tracking</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
 
-    <p>We use your information to:</p>
-    <ul>
-      <li>Provide and maintain the App</li>
-      <li>Extract health protocols from social media videos</li>
-      <li>Personalize your wellness recommendations</li>
-      <li>Generate anonymized health insights ("democracy in health")</li>
-      <li>Improve App functionality</li>
-      <li>Send notifications about your daily routines</li>
-      <li>Provide customer support</li>
-      <li>Comply with legal obligations</li>
+    <h3>Essential Uses (Required for Service)</h3>
+
+    <div class="card">
+      <h4>Account Management</h4>
+      <ul>
+        <li>Create and maintain your account</li>
+        <li>Authenticate your identity</li>
+        <li>Reset your password</li>
+        <li>Manage your subscription</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Core Features</h4>
+      <ul>
+        <li>Extract protocols from videos using AI</li>
+        <li>Organize protocols into folders</li>
+        <li>Generate daily action checklists</li>
+        <li>Track your progress and streaks</li>
+        <li>Send notifications (with your permission)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Safety Features</h4>
+      <ul>
+        <li>Analyze supplement combinations</li>
+        <li>Provide safety warnings</li>
+        <li>Cache analysis results for 24 hours</li>
+      </ul>
+    </div>
+
+    <h3>Optional Uses (With Your Consent)</h3>
+
+    <div class="card">
+      <h4>Outcome Tracking</h4>
+      <p>If you opt-in to outcome tracking:</p>
+      <ul>
+        <li>Collect anonymous feedback on protocol effectiveness</li>
+        <li>Build database of "what actually works"</li>
+        <li>Share aggregate (not individual) statistics</li>
+        <li>Requires explicit opt-in (default: OFF)</li>
+        <li>Can be disabled anytime in Settings</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Product Recommendations</h4>
+      <ul>
+        <li>Show relevant products from Amazon</li>
+        <li>Earn affiliate commissions (see <a href="/affiliate-disclosure">Affiliate Disclosure</a>)</li>
+        <li>Help support the service</li>
+      </ul>
+    </div>
+
+    <h3>Analytics & Improvement</h3>
+
+    <div class="card">
+      <h4>Anonymous Analytics</h4>
+      <ul>
+        <li>Understand how features are used</li>
+        <li>Identify bugs and crashes</li>
+        <li>Improve AI extraction accuracy</li>
+        <li>Optimize user experience</li>
+      </ul>
+      <p><strong>Tools Used:</strong> PostHog (product analytics), Sentry (error tracking) - both anonymized, no PII</p>
+    </div>
+
+    <h3>What We DON'T Do</h3>
+    <ul class="xlist">
+      <li>Sell your personal information</li>
+      <li>Share your health data with third parties</li>
+      <li>Use your data for advertising</li>
+      <li>Track you across other apps or websites</li>
+      <li>Share with insurance companies</li>
+      <li>Share with employers</li>
+      <li>Create profiles for marketing purposes</li>
     </ul>
 
-    <h2>3. Third-Party Services</h2>
+    <h2>3. Push Notifications</h2>
 
-    <p>We work with the following service providers:</p>
+    <p>With your permission, we may send push notifications to help you stay on track with your wellness goals.</p>
+
+    <h3>Notification Types</h3>
 
     <div class="card">
-      <h4>Supabase (Database & Authentication)</h4>
+      <h4>Daily Reminders</h4>
       <ul>
-        <li><strong>Purpose:</strong> User authentication, data storage</li>
-        <li><strong>Data shared:</strong> Email, user profile, app data</li>
+        <li>Morning reminder for your daily habits (default: 7:30 AM, customizable)</li>
+        <li>Can be disabled in Settings</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Progress Notifications</h4>
+      <ul>
+        <li>Streak milestone celebrations (3, 7, 14, 21, 30+ days)</li>
+        <li>Weekly progress summaries (Sunday evenings)</li>
+        <li>Can be disabled in Settings</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Protocol Notifications</h4>
+      <ul>
+        <li>When AI finishes extracting a protocol (cannot be disabled - essential)</li>
+        <li>Check-in requests at key milestones (7, 14, 30, 60, 90 days)</li>
+        <li>Reminders if protocols are inactive (3+ days)</li>
+        <li>Most can be disabled in Settings</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Discovery Notifications</h4>
+      <ul>
+        <li>Reminder to save content after browsing social media</li>
+        <li>Can be disabled in Settings</li>
+      </ul>
+    </div>
+
+    <h3>Your Control</h3>
+    <p>You can manage notification preferences in: <strong>Profile → Settings → Notifications</strong></p>
+
+    <h3>Privacy in Notifications</h3>
+    <p>Our notifications:</p>
+    <ul class="checklist">
+      <li>Do NOT include protocol names (for privacy)</li>
+      <li>Do NOT mention health conditions</li>
+      <li>Use generic, motivational messaging</li>
+      <li>Require tapping to see details</li>
+    </ul>
+    <p>We follow HIPAA-friendly practices even though we are not a HIPAA-covered entity.</p>
+
+    <h3>Opt-Out</h3>
+    <p>You can disable notifications:</p>
+    <ul>
+      <li>During onboarding (decline permission)</li>
+      <li>In iOS Settings → ReguMe → Notifications</li>
+      <li>In Android Settings → Apps → ReguMe → Notifications</li>
+      <li>In app: Profile → Settings → Notifications</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+
+    <p>We work with trusted service providers to deliver ReguMe. Here's who we share data with:</p>
+
+    <div class="card">
+      <h4>1. Supabase (Database & Authentication)</h4>
+      <ul>
+        <li><strong>Purpose:</strong> Database hosting, user authentication, file storage</li>
+        <li><strong>Data shared:</strong> All user data (email, profile, protocols, tracking data)</li>
         <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></li>
+        <li><strong>Location:</strong> United States</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>OpenAI (GPT-4o)</h4>
+      <h4>2. OpenAI (AI Processing)</h4>
       <ul>
-        <li><strong>Purpose:</strong> AI-powered protocol extraction, content analysis</li>
-        <li><strong>Data shared:</strong> Video transcripts, captions</li>
+        <li><strong>Purpose:</strong> Protocol extraction, content analysis, transcription (GPT-4o, Whisper)</li>
+        <li><strong>Data shared:</strong> Video transcripts, captions (no PII)</li>
         <li><strong>Privacy Policy:</strong> <a href="https://openai.com/policies/privacy-policy" target="_blank">https://openai.com/policies/privacy-policy</a></li>
+        <li><strong>Location:</strong> United States</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>Apify (Web Scraping)</h4>
+      <h4>3. Anthropic (Claude AI - Fallback)</h4>
+      <ul>
+        <li><strong>Purpose:</strong> AI processing backup (Claude 3.5 Sonnet)</li>
+        <li><strong>Data shared:</strong> Protocol text (no PII)</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://anthropic.com/privacy" target="_blank">https://anthropic.com/privacy</a></li>
+        <li><strong>Location:</strong> United States</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>4. Apify (Video Extraction)</h4>
       <ul>
         <li><strong>Purpose:</strong> Extract video metadata from social media</li>
-        <li><strong>Data shared:</strong> Video URLs</li>
+        <li><strong>Data shared:</strong> Public video URLs only</li>
         <li><strong>Privacy Policy:</strong> <a href="https://apify.com/privacy-policy" target="_blank">https://apify.com/privacy-policy</a></li>
+        <li><strong>Location:</strong> European Union</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>Amazon Product Advertising API</h4>
+      <h4>5. RevenueCat (Subscriptions)</h4>
       <ul>
-        <li><strong>Purpose:</strong> Product recommendations for supplements</li>
-        <li><strong>Data shared:</strong> Supplement names</li>
+        <li><strong>Purpose:</strong> Manage subscriptions and billing</li>
+        <li><strong>Data shared:</strong> User ID, subscription status</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://revenuecat.com/privacy" target="_blank">https://revenuecat.com/privacy</a></li>
+        <li><strong>Location:</strong> United States</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>6. Amazon (Product Recommendations)</h4>
+      <ul>
+        <li><strong>Purpose:</strong> Affiliate product links (see <a href="/affiliate-disclosure">Affiliate Disclosure</a>)</li>
+        <li><strong>Data shared:</strong> Supplement names (no user PII)</li>
         <li><strong>Privacy Policy:</strong> <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496" target="_blank">Amazon Privacy Notice</a></li>
+        <li><strong>Location:</strong> United States</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>Cloudflare R2 / Supabase Storage</h4>
+      <h4>7. PostHog (Analytics)</h4>
       <ul>
-        <li><strong>Purpose:</strong> Image hosting</li>
-        <li><strong>Data shared:</strong> Profile images, video thumbnails</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a></li>
+        <li><strong>Purpose:</strong> Product analytics, feature usage tracking</li>
+        <li><strong>Data shared:</strong> Anonymized usage data (no PII)</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></li>
+        <li><strong>Location:</strong> United States</li>
+        <li><strong>Note:</strong> Can be disabled (coming soon)</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>Sentry (Error Tracking)</h4>
+      <h4>8. Sentry (Error Tracking)</h4>
       <ul>
-        <li><strong>Purpose:</strong> Monitor app errors and performance</li>
-        <li><strong>Data shared:</strong> Crash logs, device information</li>
+        <li><strong>Purpose:</strong> Crash reporting, error monitoring</li>
+        <li><strong>Data shared:</strong> Error logs, device information (no PII)</li>
         <li><strong>Privacy Policy:</strong> <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></li>
+        <li><strong>Location:</strong> United States</li>
       </ul>
     </div>
 
-    <h2>4. Data Security</h2>
+    <div class="card">
+      <h4>9. Cloudinary (Image Hosting)</h4>
+      <ul>
+        <li><strong>Purpose:</strong> Host creator profile images</li>
+        <li><strong>Data shared:</strong> Public images only</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://cloudinary.com/privacy" target="_blank">https://cloudinary.com/privacy</a></li>
+        <li><strong>Location:</strong> United States</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>10. Expo Push Notifications</h4>
+      <ul>
+        <li><strong>Purpose:</strong> Send push notifications to your device</li>
+        <li><strong>Data shared:</strong> Device tokens, notification content</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
+        <li><strong>Location:</strong> United States</li>
+      </ul>
+    </div>
+
+    <h2>5. Data Security</h2>
 
     <p>We implement appropriate technical and organizational security measures:</p>
-    <ul>
-      <li>Encryption in transit (SSL/TLS)</li>
-      <li>Encryption at rest (database encryption)</li>
-      <li>Secure authentication (Supabase Auth)</li>
+    <ul class="checklist">
+      <li>Encryption in transit (TLS 1.2+)</li>
+      <li>Encryption at rest (AES-256)</li>
+      <li>Secure authentication (OAuth 2.0, Supabase Auth)</li>
+      <li>Row Level Security on all database tables</li>
+      <li>API keys stored server-side only</li>
       <li>Regular security updates</li>
       <li>Access controls and logging</li>
+      <li>Rate limiting on all APIs</li>
+      <li>Input validation and sanitization</li>
     </ul>
 
     <p>
@@ -143,7 +345,7 @@ import Layout from '../components/Layout.astro';
       protect your data, we cannot guarantee absolute security.
     </p>
 
-    <h2>5. Data Retention</h2>
+    <h2>6. Data Retention</h2>
 
     <p>We retain your information:</p>
     <ul>
@@ -151,63 +353,188 @@ import Layout from '../components/Layout.astro';
       <li><strong>Health tracking data:</strong> Until you delete your account</li>
       <li><strong>Anonymized analytics:</strong> Indefinitely (cannot be linked to you)</li>
       <li><strong>Cached data:</strong> 24-48 hours (automatic cleanup)</li>
+      <li><strong>Session data:</strong> 30 days of inactivity (auto-logout)</li>
     </ul>
 
-    <p>You can request deletion of your data at any time.</p>
+    <p>You can request deletion of your data at any time through the app or by emailing us.</p>
 
-    <h2>6. Your Rights</h2>
+    <h2>7. Your Privacy Rights</h2>
 
-    <p>You have the right to:</p>
-    <ul class="checklist">
-      <li>Access your personal data</li>
-      <li>Correct inaccurate data</li>
-      <li>Delete your data (account deletion)</li>
-      <li>Opt-out of outcome tracking</li>
-      <li>Opt-out of analytics</li>
-      <li>Export your data</li>
-    </ul>
+    <h3>All Users</h3>
 
-    <p>To exercise these rights, contact us at <a href="mailto:privacy@regume.com">privacy@regume.com</a></p>
+    <div class="card">
+      <h4>Right to Access</h4>
+      <ul>
+        <li>View all your data in the app</li>
+        <li>See what protocols you've saved</li>
+        <li>Review your tracking history</li>
+        <li>Check your account information</li>
+      </ul>
+    </div>
 
-    <h2>7. Children's Privacy</h2>
+    <div class="card">
+      <h4>Right to Delete</h4>
+      <ul>
+        <li>Delete individual protocols</li>
+        <li>Delete daily actions</li>
+        <li>Delete your entire account (Profile → Settings → Delete Account)</li>
+        <li>All data permanently removed</li>
+      </ul>
+    </div>
 
-    <p>
-      ReguMe is intended for users 17 years of age and older. We do not knowingly collect 
-      information from children under 17. If you believe we have collected information from a 
-      child, please contact us immediately.
-    </p>
+    <div class="card">
+      <h4>Right to Control</h4>
+      <ul>
+        <li>Manage notification preferences</li>
+        <li>Toggle outcome tracking on/off</li>
+        <li>Choose what folders to use</li>
+        <li>Decide what to track</li>
+      </ul>
+    </div>
 
-    <h2>8. California Privacy Rights (CCPA)</h2>
+    <h3>European Union Users (GDPR)</h3>
 
-    <p>If you are a California resident, you have additional rights:</p>
+    <p>You have additional rights under GDPR:</p>
+
+    <div class="card">
+      <h4>Right to Data Portability</h4>
+      <ul>
+        <li>Request a copy of your data</li>
+        <li>Receive in machine-readable format (JSON)</li>
+        <li>Transfer to another service</li>
+        <li>Contact: <a href="mailto:privacy@regume.com">privacy@regume.com</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Right to Rectification</h4>
+      <ul>
+        <li>Correct inaccurate information</li>
+        <li>Update your profile data</li>
+        <li>Modify your preferences</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Right to Restrict Processing</h4>
+      <ul>
+        <li>Limit how we use your data</li>
+        <li>Object to certain processing</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Right to Object</h4>
+      <ul>
+        <li>Object to data processing for certain purposes</li>
+        <li>Opt-out of analytics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Right to Lodge Complaint</h4>
+      <ul>
+        <li>File complaint with EU supervisory authority</li>
+        <li>Contact your local data protection authority</li>
+      </ul>
+    </div>
+
+    <h3>California Users (CCPA)</h3>
+
+    <div class="card">
+      <h4>Right to Know</h4>
+      <ul>
+        <li>What personal information we collect</li>
+        <li>Sources of that information</li>
+        <li>Purposes for collection</li>
+        <li>Third parties we share with</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Right to Delete</h4>
+      <ul>
+        <li>Request deletion of personal information</li>
+        <li>Some exceptions apply (legal obligations)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Right to Opt-Out</h4>
+      <ul>
+        <li>Opt-out of sale of personal information</li>
+        <li><strong>Note:</strong> We do NOT sell personal information</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Right to Non-Discrimination</h4>
+      <ul>
+        <li>Same service quality regardless of privacy choices</li>
+        <li>No penalties for exercising rights</li>
+      </ul>
+    </div>
+
+    <h3>How to Exercise Your Rights</h3>
+
+    <div class="card">
+      <p><strong>Data Requests:</strong></p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:privacy@regume.com">privacy@regume.com</a></li>
+        <li><strong>Subject:</strong> "Data Request" or "GDPR Request" or "CCPA Request"</li>
+        <li><strong>Include:</strong> Your registered email address</li>
+        <li><strong>Response time:</strong> Within 30 days (GDPR) or 45 days (CCPA)</li>
+        <li><strong>Cost:</strong> Free</li>
+      </ul>
+      <p>We'll verify your identity before fulfilling requests.</p>
+    </div>
+
+    <h2>8. International Data Transfers</h2>
+
+    <div class="alert alert-info">
+      <p><strong>Data Transfer Notice:</strong></p>
+      <p>
+        Your data may be transferred to and stored on servers in the United States. If you are located 
+        outside the United States, your data will be transferred to US servers. We use appropriate 
+        safeguards (encryption, access controls) to protect your data.
+      </p>
+      <p>
+        By using ReguMe, you consent to this transfer. European Users: We comply with GDPR data 
+        transfer requirements.
+      </p>
+    </div>
+
+    <h2>9. Children's Privacy</h2>
+
+    <div class="alert alert-warning">
+      <p><strong>Age Requirement: 17+</strong></p>
+      <p>
+        ReguMe is not intended for children under 17. We do not knowingly collect information from 
+        children under 13. If we discover we have collected data from a child under 13, we will delete 
+        it immediately.
+      </p>
+      <p>
+        <strong>Parents:</strong> If you believe your child has provided information to ReguMe, contact 
+        <a href="mailto:privacy@regume.com">privacy@regume.com</a>.
+      </p>
+    </div>
+
+    <h2>10. Cookies & Tracking</h2>
+
+    <h3>Analytics</h3>
     <ul>
-      <li>Right to know what data we collect</li>
-      <li>Right to deletion</li>
-      <li>Right to opt-out of data sales (we do not sell data)</li>
-      <li>Right to non-discrimination</li>
+      <li><strong>PostHog:</strong> Anonymous usage tracking (can be disabled in settings - coming soon)</li>
+      <li><strong>Sentry:</strong> Crash reports (no personal data)</li>
     </ul>
 
-    <p>Contact us at <a href="mailto:privacy@regume.com">privacy@regume.com</a> to exercise these rights.</p>
-
-    <h2>9. International Users (GDPR)</h2>
-
-    <p>If you are in the European Economic Area (EEA), you have additional rights:</p>
-    <ul>
-      <li>Right to access</li>
-      <li>Right to rectification</li>
-      <li>Right to erasure</li>
-      <li>Right to restrict processing</li>
-      <li>Right to data portability</li>
-      <li>Right to object</li>
+    <h3>We Do NOT Use</h3>
+    <ul class="xlist">
+      <li>Third-party advertising cookies</li>
+      <li>Cross-site tracking</li>
+      <li>Behavioral profiling for ads</li>
     </ul>
 
-    <p>
-      Our legal basis for processing: Consent, contract performance, legitimate interests.
-    </p>
-
-    <p>Contact our Data Protection Officer at <a href="mailto:dpo@regume.com">dpo@regume.com</a></p>
-
-    <h2>10. Changes to Privacy Policy</h2>
+    <h2>11. Changes to Privacy Policy</h2>
 
     <p>We may update this Privacy Policy from time to time. We will notify you of changes by:</p>
     <ul>
@@ -218,14 +545,15 @@ import Layout from '../components/Layout.astro';
 
     <p>Continued use after changes constitutes acceptance.</p>
 
-    <h2>11. Contact Us</h2>
+    <h2>12. Contact Us</h2>
 
-    <p>For privacy questions or concerns:</p>
+    <p>For privacy questions, data requests, or concerns:</p>
 
     <div class="card">
-      <p><strong>Email:</strong> <a href="mailto:privacy@regume.com">privacy@regume.com</a></p>
+      <p><strong>Privacy Email:</strong> <a href="mailto:privacy@regume.com">privacy@regume.com</a></p>
+      <p><strong>Data Protection Officer:</strong> <a href="mailto:dpo@regume.com">dpo@regume.com</a></p>
       <p><strong>Response time:</strong> Within 30 days</p>
+      <p><strong>Support:</strong> <a href="mailto:support@regumeapp.com">support@regumeapp.com</a></p>
     </div>
   </div>
 </Layout>
-

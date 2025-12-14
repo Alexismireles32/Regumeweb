@@ -42,7 +42,7 @@ import Layout from '../components/Layout.astro';
       <div class="card step-card">
         <div class="step-number">1</div>
         <h4>Import</h4>
-        <p>Paste a video URL from TikTok, Instagram, or YouTube</p>
+        <p>Paste a video URL from TikTok, Instagram, YouTube, or Facebook</p>
       </div>
       
       <div class="card step-card">
@@ -97,14 +97,42 @@ import Layout from '../components/Layout.astro';
       </div>
     </div>
 
+    <h2>Key Features</h2>
+
+    <div class="card">
+      <h3>AI Video Extraction</h3>
+      <p>Extract wellness protocols from TikTok, Instagram, YouTube, and Facebook videos using advanced AI (GPT-4o, Claude 3.5 Sonnet).</p>
+    </div>
+
+    <div class="card">
+      <h3>Smart Folder Organization</h3>
+      <p>Organize protocols into 12 pre-made categories (Sleep & Energy, Mental Health, Gut Health, etc.) or create custom folders.</p>
+    </div>
+
+    <div class="card">
+      <h3>Daily Action Tracking</h3>
+      <p>Convert protocols into daily checklists, track completion, and build streaks with reminders.</p>
+    </div>
+
+    <div class="card">
+      <h3>Supplement Safety Scanner</h3>
+      <p>Analyze supplement combinations for potential interactions and safety concerns (informational only - not medical advice).</p>
+    </div>
+
+    <div class="card">
+      <h3>Outcome Tracking</h3>
+      <p>Opt-in to anonymously track what protocols actually work, contributing to "democracy in health" insights.</p>
+    </div>
+
     <h2>Technology</h2>
 
     <p>Built with modern health tech stack:</p>
     <ul>
-      <li><strong>React Native</strong> - Native mobile experience</li>
+      <li><strong>React Native + Expo</strong> - Native mobile experience</li>
       <li><strong>Supabase</strong> - Secure backend infrastructure</li>
-      <li><strong>OpenAI GPT-4o</strong> - AI-powered protocol extraction</li>
-      <li><strong>Social Media APIs</strong> - Content discovery</li>
+      <li><strong>OpenAI GPT-4o & Whisper</strong> - AI-powered protocol extraction and transcription</li>
+      <li><strong>Claude 3.5 Sonnet</strong> - Fallback AI processing</li>
+      <li><strong>Apify</strong> - Video metadata extraction</li>
     </ul>
 
     <div class="alert alert-warning">
