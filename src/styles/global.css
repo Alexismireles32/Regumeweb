@@ -1,11 +1,44 @@
-/* ReguMe Brand Colors */
+/* ReguMe Brand Colors - Exact App Palette */
 :root {
-  --primary: #00A57E;
-  --background: #F4FDFC;
-  --dark: #062925;
-  --accent: #B9F2DA;
-  --text: #1a1a1a;
-  --text-light: #666;
+  /* PRIMARY BRAND - Coral Burst */
+  --primary: #E86842;
+  --primary-dark: #FF6B4A;
+  --primary-light: #FFC4A8;
+  --primary-muted: #FFE5D9;
+  
+  /* BACKGROUNDS - Warm & Inviting */
+  --background: #FFF4EC;           /* Very Light Peach - main screens */
+  --background-secondary: #FFFFFF;  /* Pure White - cards, modals */
+  --background-tint: #E7F3F1;      /* Chip Sage - subtle UI backgrounds */
+  --peach-soft: #F8DCCF;           /* Soft Peach - gradients */
+  
+  /* TEXT COLORS - Charcoal & Grays */
+  --text: #1E1F22;                 /* Charcoal - headlines, body text */
+  --text-secondary: #5A5A5C;       /* Medium gray - secondary text */
+  --text-tertiary: #9E9EA0;        /* Light gray - hints, disabled text */
+  --text-light: #5A5A5C;           /* Alias for secondary */
+  --dark: #1E1F22;                 /* Alias for primary text */
+  
+  /* BORDER COLORS - Warm Neutrals */
+  --border: #E0D8D0;               /* Warm neutral - cards, inputs */
+  --border-light: #F0E8E0;         /* Very light warm - dividers */
+  
+  /* ACCENT COLORS */
+  --accent: #FFC4A8;               /* Light coral - highlights */
+  --accent-mint: #DDEAE6;          /* Mint Mist - success states */
+  
+  /* GRADIENTS */
+  --gradient-warm: linear-gradient(135deg, #F8DCCF 0%, #FFFFFF 100%);
+  --gradient-primary: linear-gradient(135deg, #E86842 0%, #FFC4A8 100%);
+  --gradient-background: linear-gradient(135deg, #F8DCCF 0%, #E7F3F1 100%);
+  --gradient-hero: linear-gradient(180deg, #FFF4EC 0%, #FFFFFF 100%);
+  
+  /* SEMANTIC COLORS */
+  --success: #DDEAE6;              /* Mint Mist */
+  --success-dark: #66BB6A;         /* Traditional green */
+  --warning: #FF9A56;              /* Orange */
+  --error: #EF4444;                /* Red */
+  --info: #3B82F6;                 /* Blue */
   
   /* Mobile-optimized spacing */
   --spacing-xs: 0.5rem;
@@ -22,7 +55,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: rgba(0, 165, 126, 0.1);
+  -webkit-tap-highlight-color: rgba(232, 104, 66, 0.1);
 }
 
 html {
@@ -134,8 +167,9 @@ li {
 
 /* Header - Mobile Optimized */
 header {
-  background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: var(--background-secondary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid var(--border-light);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -166,9 +200,20 @@ header {
   padding: 0.5rem 0;
 }
 
+.logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover img, .logo:active img {
+  transform: scale(1.05);
+}
+
 .logo:hover, .logo:active {
   text-decoration: none;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 /* Mobile Navigation */
@@ -196,13 +241,13 @@ nav a {
 
 nav a:hover, nav a:active {
   color: var(--primary);
-  background-color: rgba(0, 165, 126, 0.05);
+  background-color: var(--primary-muted);
   text-decoration: none;
 }
 
 /* Footer - Mobile Optimized */
 footer {
-  background: var(--dark);
+  background: var(--text);
   color: white;
   margin-top: auto;
   padding: var(--spacing-xl) var(--spacing-md);
@@ -223,7 +268,7 @@ footer {
 }
 
 .footer-section h4 {
-  color: var(--accent);
+  color: var(--primary-light);
   margin-bottom: var(--spacing-md);
   font-size: clamp(1rem, 3vw, 1.1rem);
 }
@@ -262,7 +307,7 @@ footer {
   font-size: clamp(0.8125rem, 2vw, 0.9rem);
 }
 
-/* Buttons - Mobile Optimized */
+/* Buttons - Mobile Optimized with Coral Burst Brand */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -270,7 +315,7 @@ footer {
   padding: var(--spacing-md) var(--spacing-lg);
   background: var(--primary);
   color: white;
-  border-radius: 12px;
+  border-radius: 16px;
   font-weight: 600;
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
@@ -283,14 +328,15 @@ footer {
   max-width: 300px;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 2px 8px rgba(232, 104, 66, 0.2);
 }
 
 .btn:hover, .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 165, 126, 0.3);
+  box-shadow: 0 4px 12px rgba(232, 104, 66, 0.3);
   text-decoration: none;
   opacity: 1;
-  background-color: #009970;
+  background-color: var(--primary-dark);
 }
 
 .btn:active {
@@ -304,14 +350,18 @@ footer {
 }
 
 .btn-secondary:hover, .btn-secondary:active {
-  background: var(--accent);
-  border-color: var(--primary);
+  background: var(--primary-muted);
+  border-color: var(--primary-dark);
+  color: var(--primary-dark);
 }
 
 /* Hero Section - Mobile Optimized */
 .hero-section {
   text-align: center;
   padding: var(--spacing-xl) 0;
+  background: var(--gradient-hero);
+  border-radius: 24px;
+  margin-bottom: var(--spacing-xl);
 }
 
 .hero-subtitle {
@@ -338,11 +388,12 @@ footer {
 
 /* Cards - Mobile Optimized */
 .card {
-  background: white;
-  border-radius: 12px;
+  background: var(--background-secondary);
+  border-radius: 16px;
   padding: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-light);
   width: 100%;
   overflow-wrap: break-word;
 }
@@ -376,23 +427,25 @@ footer {
 }
 
 .quick-link-card {
-  background: white;
-  border-radius: 12px;
+  background: var(--background-secondary);
+  border-radius: 16px;
   padding: var(--spacing-lg);
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-light);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   text-decoration: none;
   color: var(--text);
   display: block;
   min-height: var(--touch-target);
   width: 100%;
-  -webkit-tap-highlight-color: rgba(0, 165, 126, 0.1);
+  -webkit-tap-highlight-color: rgba(232, 104, 66, 0.1);
 }
 
 .quick-link-card:active {
   transform: scale(0.98);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-light);
 }
 
 .quick-link-card h3 {
@@ -410,7 +463,7 @@ footer {
 /* Alert boxes - Mobile Optimized */
 .alert {
   padding: var(--spacing-md) var(--spacing-lg);
-  border-radius: 12px;
+  border-radius: 16px;
   margin-bottom: var(--spacing-lg);
   border-left: 4px solid;
   width: 100%;
@@ -420,21 +473,21 @@ footer {
 }
 
 .alert-warning {
-  background: #fff3cd;
-  border-color: #ffc107;
-  color: #856404;
+  background: #FFF4EC;
+  border-color: var(--warning);
+  color: #8B4513;
 }
 
 .alert-info {
-  background: #d1ecf1;
-  border-color: #0dcaf0;
-  color: #055160;
+  background: var(--accent-mint);
+  border-color: var(--info);
+  color: #1E4D5F;
 }
 
 .alert-danger {
-  background: #f8d7da;
-  border-color: #dc3545;
-  color: #721c24;
+  background: #FEE2E2;
+  border-color: var(--error);
+  color: #991B1B;
 }
 
 .alert strong {
@@ -687,6 +740,7 @@ code {
   .quick-link-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-light);
   }
   
   .step-grid {
@@ -774,9 +828,10 @@ code {
 
 /* Mission Card */
 .mission-card {
-  background: var(--accent);
+  background: var(--primary-muted);
   border-left: 4px solid var(--primary);
   padding: var(--spacing-lg);
+  border-radius: 16px;
 }
 
 .mission-card p {
@@ -790,6 +845,42 @@ code {
   font-size: clamp(1rem, 3vw, 1.25rem) !important;
   color: var(--text-light) !important;
   margin-bottom: var(--spacing-xl) !important;
+}
+
+/* Brand-specific enhancements */
+.brand-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-shadow {
+  box-shadow: 0 4px 16px rgba(232, 104, 66, 0.15);
+}
+
+.warm-card {
+  background: var(--gradient-warm);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+}
+
+/* Accent highlights */
+::selection {
+  background-color: var(--primary-light);
+  color: var(--text);
+}
+
+::-moz-selection {
+  background-color: var(--primary-light);
+  color: var(--text);
+}
+
+/* Focus states for accessibility with brand colors */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Print styles */

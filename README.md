@@ -117,11 +117,31 @@ npm run preview
 ## 🎨 Brand Colors
 
 ```css
-Primary: #00A57E    /* Teal green */
-Background: #F4FDFC /* Mint white */
-Dark: #062925       /* Dark teal */
-Accent: #B9F2DA     /* Light mint */
+/* PRIMARY BRAND - Coral Burst */
+Primary:       #E86842  /* Coral - Main buttons, CTAs, brand identity */
+Primary Dark:  #FF6B4A  /* Hover states, emphasis */
+Primary Light: #FFC4A8  /* Light accents, highlights */
+Primary Muted: #FFE5D9  /* Subtle backgrounds, disabled states */
+
+/* BACKGROUNDS - Warm & Inviting */
+Background:           #FFF4EC  /* Very Light Peach - main screens */
+Background Secondary: #FFFFFF  /* Pure White - cards, modals */
+Background Tint:      #E7F3F1  /* Chip Sage - subtle UI backgrounds */
+Peach Soft:           #F8DCCF  /* Soft Peach - gradients */
+
+/* TEXT - Charcoal & Grays */
+Text Primary:   #1E1F22  /* Charcoal - headlines, body text */
+Text Secondary: #5A5A5C  /* Medium gray - secondary text */
+Text Tertiary:  #9E9EA0  /* Light gray - hints, disabled */
+
+/* BORDERS - Warm Neutrals */
+Border:       #E0D8D0  /* Warm neutral - cards, inputs */
+Border Light: #F0E8E0  /* Very light warm - dividers */
 ```
+
+**Full Color Documentation:** See [COLOR-PALETTE.md](./COLOR-PALETTE.md)
+
+**Design Philosophy:** Warm, welcoming coral and peach tones create an inviting, motivating experience that matches the iOS mobile app exactly.
 
 ---
 
